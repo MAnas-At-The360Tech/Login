@@ -1,27 +1,18 @@
 import './App.css';
+import LoginToFacebook from './LoginToFacebook';
+import LoginToGoogle from './LoginToGoogle';
+import LoginToPhone from './LoginToPhone';
+// import LogintoGoogleBtn from './LogintoGoogleBtn';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div>
+      <h1 className="text-center">Login System</h1>
+      <div className=" pt-5 d-grid gap-2 col-6 mx-auto">
+        <LoginToGoogle />
+        <LoginToFacebook />
+        <LoginToPhone />
+      </div>
     </div>
   );
 }
